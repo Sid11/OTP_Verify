@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Send OTP</title>
+</head>
+<body>
+Hello buddy, welcome to our site.
+
+<br><br><br>
+<p style="color: red;">{{error_message}}</p>
+<form action="{% url 'otp_send' %}" method="POST">
+	{% csrf_token %}
+	<input type="number" name="number" placeholder="Your Mobile Number">
+	<br>
+	<input type="submit" name="submit" value="Send OTP">
+	<br>
+</form>
+
+
+
+</body>
+</html>

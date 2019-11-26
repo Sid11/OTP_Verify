@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verification</title>
+</head>
+<body>
+Please verify your otp to proceed
+<br><br><br>
+<p style="color: red;">{{error_message}}</p>
+<form action="{% url 'otp_verify' %}" method="POST">
+	{% csrf_token %}
+	<p>Your OTP was send on {{number}} </p>
+	<input type="otp" name="otp" placeholder="Enter received OTP">
+	<br>
+	<input type="submit" name="submit" value="Verify OTP">
+	<br>
+</form>
+
+
+</body>
+</html>
