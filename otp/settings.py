@@ -26,7 +26,7 @@ SECRET_KEY = 'b-_ikc4l01a6)lis@f#nl*7ytqf04jnj@2bjgk3xfpk07m@4-g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sid-otp.herokuapp.com']
+ALLOWED_HOSTS = ['sid-otp.herokuapp.com','127.0.0.1']
 
 
 # Application definition
